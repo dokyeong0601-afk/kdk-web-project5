@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let input1 = prompt("1번 문제: 센티미터를 입력해주세요(cm)");
+        let inch = 2.54 * input1;
+        let feet = 12 * inch;
+        alert (inch + '인치' + '\n' + 
+               feet + '피트');
+
+        let input2_r = prompt("2번 문제(1): 반지름의 길이를 입력해주세요");
+        let input2_h = prompt("2번 문제(2): 높이의 길이를 입력해주세요");
+        let pi = 3.14;
+        alert ('원기둥의 부피 = ' + (input2_r * input2_r * pi) * input2_h);
+
+        let input3 = prompt("3번 문제: 네 자리의 정수를 입력해주세요");
+        let thousand = parseInt(input3 / 1000);
+        let hundred = parseInt(input3 % 1000 / 100);
+        let ten = parseInt(input3 % 1000 % 100 / 10);
+        let one = parseInt(input3 % 1000 % 100 % 10 / 1);
+        alert ("천의 자리: " + thousand + '\n' +
+               "백의 자리: " + hundred + '\n' +
+               "십의 자리: " + ten + '\n' + 
+               "일의 자리: " + one + '\n');
+     </script>
+</head>
+</html>
